@@ -5,8 +5,7 @@ using System.Text;
 
 namespace Problem_1
 {
-    public abstract class Character
+    public class Paladin
     {
-        
     }
 }
