@@ -24,17 +24,35 @@ namespace Problem_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Example of aggregation");
-            Car a = new Car("Mustang");
-            a.PrintState();
-
             Owner b = new Owner("Kyle");
+            Console.WriteLine("Initial list of cars owned");
             b.PrintState();
+            Console.WriteLine();
+
+            Car c = new Car("McClaren F1");
+            Car d = new Car("Ferrari GTB4");
+
+            b.BuyCar(c);
+            Console.WriteLine("List of cars after buying car C");
+            b.PrintState();
+            Console.WriteLine();
+
+            Console.WriteLine("Attempting to sell a car not owned by the owner");
+            b.SellCar(d);
+            Console.WriteLine();
+
+            b.BuyCar(d);
+            Console.WriteLine("Now that car d is bought, the owner can sell it");
+            b.PrintState();
+            Console.WriteLine();
+
+            b.SellCar(d);
+
 
             Console.WriteLine();
             Console.WriteLine("Example of composition");
-            Vehicle c = new Vehicle("Corvette", 6.2M);
-            c.PrintState();
+            Vehicle a = new Vehicle("Corvette", 6.2M);
+            a.PrintState();
         }
 
         
