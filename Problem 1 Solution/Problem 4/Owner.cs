@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,17 @@ namespace Problem_3
 
         //list of cars can be passed into the owner class
         public List<Car> Cars = new List<Car>();
+
+        //create a method to sell a car by adding a specific car name to
+        //the Cars list
         public void BuyCar(Car car)
         {
             Cars.Add(car);
 
         }
 
+        //create a method to sell a car by removing a specific car name from 
+        //the Cars list
         public void SellCar(Car car)
         {
             if (!Cars.Remove(car))
@@ -31,6 +37,7 @@ namespace Problem_3
             }
         }
 
+        //method that creates an owner and assigns a given name
         public string OwnerName;
 
         public Owner(string Name)
@@ -38,6 +45,7 @@ namespace Problem_3
             OwnerName = Name; 
         }
 
+        
         public void PrintState()
         {
             //using a foreach loop to print each car the owner owns
@@ -58,6 +66,11 @@ namespace Problem_3
         public Car(string name)
         {
             CarName = name;
+        }
+
+        public void PrintState()
+        {
+            Console.WriteLine(CarName);
         }
     }
 }

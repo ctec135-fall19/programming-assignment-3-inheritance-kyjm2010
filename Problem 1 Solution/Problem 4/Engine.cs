@@ -18,6 +18,11 @@ namespace Problem_3
         {
             this.Size = size;
         }
+
+        public void PrintState()
+        {
+            Console.WriteLine(Size);
+        }
     }
 
     class Vehicle

@@ -9,8 +9,8 @@ namespace Problem_3
     {
         //fields
         private int privateInt;
-        protected int healthPoints;
-        protected int level;
+        public int healthPoints;
+        public int level;
 
         //constructors
 
@@ -19,7 +19,7 @@ namespace Problem_3
         //character
         public Character()
         {
-            privateInt = 25;
+            //privateInt = 25;
             healthPoints = 100;
             level = 1;
             Console.WriteLine("Character default constructor");

@@ -28,6 +28,7 @@ namespace Problem_3
             //we can see that privateInt is inaccessible due to protection 
             //level, however protected variables are ableto be inheritted 
             //by the childclass
+
             //Console.WriteLine("PrivateInt: {0}", privateInt);
             Console.WriteLine("Rage:\t {0}", Rage);
             Console.WriteLine("Health:\t {0}", healthPoints);
